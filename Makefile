@@ -14,6 +14,11 @@
 vpath %.c ./ ./printf/
 
 SRC = ft_atoi.c \
+  ft_intdup.c \
+  ft_lstline.c \
+  ft_swap.c \
+  ft_strisdigit.c \
+  ft_memdel2.c \
   ft_tabjoin.c \
   ft_cut_last_tab.c \
   ft_reverse_tab.c \

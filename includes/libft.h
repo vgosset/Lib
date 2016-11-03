@@ -6,7 +6,7 @@
 /*   By: vgosset <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 11:50:24 by vgosset           #+#    #+#             */
-/*   Updated: 2016/10/13 14:40:22 by vgosset          ###   ########.fr       */
+/*   Updated: 2016/11/03 16:12:05 by vgosset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,25 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef enum		e_bool
+{
+	false,
+	true
+}					t_bool;
+
+typedef struct		s_lstline
+{
+	struct s_lstline	*next;
+	char				*line;
+}					t_lstline;
+
+t_lstline			*ft_new_lstline(void);
+t_lstline			*ft_add_lstline(t_lstline *begin, char *line);
+t_lstline			*ft_lstline_del(t_lstline *begin);
+int					*ft_intdup(const int *i1, int len);
+int					ft_strisdigit(char *str);
+void				ft_memdel2(void ***ap);
+void				ft_swap(int *a, int *b);
 char				**ft_tabjoin(char **tab1, char **tab2);
 char				**ft_cut_last_tab(char **tab);
 char				**ft_reverse_tab(char **tab);
